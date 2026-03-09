@@ -3,12 +3,15 @@
   --blue-color: #2e4756;
   --dark-cyan-color: #39707f;
   --cyan-color: #3c7a89;
+  --yellow-color: #EFCB68;
 }
 
 body {
   display: flex;
   flex-direction: column;
+  height: 100vh;
   align-items: center;
+  background: linear-gradient(335deg, var(--yellow-color) 30%, rgba(252, 242, 215, 1) 60%, white 100%);;
   margin: 10px 64px 0px 64px;
 }
 
@@ -24,22 +27,29 @@ body {
   gap: 50px;
 }
 
-.nav-bar a {
+a {
   color: var(--blue-color);
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s;
 }
 
-.nav-bar a:hover {
+a:hover {
   color: var(--dark-cyan-color);
 }
 
-.lingo-choice {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background-color: var(--almost-black-color);
+.nav-bar-mobile {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 15px;
+  padding: 25px;
+  border: 2px solid var(--dark-cyan-color);
+  width: 80%;
+  top: 85px;
+  gap: 10px;
+  
 }
 
 .clickable {
@@ -48,4 +58,58 @@ body {
 
 .row {
   display: flex;
+  align-items: center;
+}
+
+/* Hamburger icon animation */
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    gap: 0;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.hamburger-bar {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: var(--almost-black-color);
+    border-radius: 2px;
+    position: absolute;
+    transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1),
+                opacity   0.25s ease;
+    transform-origin: center;
+}
+
+.hamburger-bar.top    { transform: translateY(-8px); }
+.hamburger-bar.middle { transform: translateY(0px);  }
+.hamburger-bar.bottom { transform: translateY(8px);  }
+
+.hamburger-bar.top.open    { transform: translateY(0) rotate(45deg);  }
+.hamburger-bar.middle.open { opacity: 0; transform: scaleX(0);        }
+.hamburger-bar.bottom.open { transform: translateY(0) rotate(-45deg); }
+
+@media screen and (max-width: 900px) {
+  .nav-bar {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .nav-bar-mobile {
+    display: flex;
+  }
+
+  body {
+    margin: 10px 10px 0px 10px;
+  }
 }
