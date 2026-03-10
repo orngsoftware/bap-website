@@ -4,6 +4,7 @@
   --dark-cyan-color: #39707f;
   --cyan-color: #3c7a89;
   --yellow-color: #EFCB68;
+  --light-grey-color: #E5E4E2;
 }
 
 body {
@@ -15,6 +16,19 @@ body {
   margin: 10px 64px 0px 64px;
 }
 
+p {
+  color: var(--blue-color);
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.to-right {
+  margin-left: auto;
+  margin-right: 10px;
+}
+
 .nav-wrapper {
   width: 100%;
   display: flex;
@@ -24,14 +38,16 @@ body {
 
 .nav-bar {
   display: flex;
-  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
 }
 
 a {
   color: var(--blue-color);
   text-decoration: none;
   font-weight: 600;
-  transition: color 0.3s;
+  transition: color 0.2s;
 }
 
 a:hover {
@@ -46,10 +62,55 @@ a:hover {
   border-radius: 15px;
   padding: 25px;
   border: 2px solid var(--dark-cyan-color);
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
   width: 80%;
   top: 85px;
   gap: 10px;
   
+}
+
+.sub-nav-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 0px 15px 15px;
+}
+
+.sub-nav-mobile a {
+  border-bottom: 1px solid var(--light-grey-color);
+  padding-bottom: 10px;
+}
+
+.sub-navbar {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 2px solid var(--dark-cyan-color);
+  border-radius: 15px;
+  padding: 25px;
+  gap: 10px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+}
+
+.sub-navbar.sub-nav-1 {
+  display: none;
+  top: 60px;
+  left: 20%;
+}
+
+.sub-navbar.sub-nav-2 {
+  display: none;
+  top: 60px;
+  left: 65%;
+}
+
+#dropdown1:hover .sub-navbar.sub-nav-1 {
+  display: flex;
+}
+
+#dropdown2:hover .sub-navbar.sub-nav-2 {
+  display: flex;
 }
 
 .clickable {
@@ -59,6 +120,24 @@ a:hover {
 .row {
   display: flex;
   align-items: center;
+}
+
+.icon-up {
+  display: none;
+}
+.icon-down {
+  display: inline;
+}
+
+.dropdown {
+  cursor: pointer;
+}
+
+.dropdown:hover .icon-up {
+  display: inline;
+}
+.dropdown:hover .icon-down {
+  display: none;
 }
 
 /* Hamburger icon animation */
@@ -98,7 +177,7 @@ a:hover {
 .hamburger-bar.middle.open { opacity: 0; transform: scaleX(0);        }
 .hamburger-bar.bottom.open { transform: translateY(0) rotate(-45deg); }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1100px) {
   .nav-bar {
     display: none;
   }

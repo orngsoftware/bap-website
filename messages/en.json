@@ -4,11 +4,25 @@
     },
     "Navbar": {
         "1": "Home",
-        "2": "Association",
+        "2": "BAP",
         "3": "Membership",
-        "4": "Events",
-        "5": "Library",
-        "6": "Partners",
-        "7": "Contact"
+        "4": "Ethics",
+        "5": "Divisions",
+        "6": "News & Events",
+        "7": "Documents",
+        "8": "Contact",
+        "sub-5": {
+            "1": "Certification of specialists",
+            "2": "Licensing of programs",
+            "3": "Annual BAP conference",
+            "4": "Annual open forum for non-professionals",
+            "5": "Growth programs & Support groups",
+            "6": "Publisher"
+        },
+        "sub-7": {
+            "1": "Code of Ethics",
+            "2": "Regulation of certification",
+            "3": "Regulation of licensing"
+        }
     }
 }
