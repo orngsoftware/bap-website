@@ -1,6 +1,7 @@
 {
     "HomePage": {
-        "title": "Baltic Association for Psychotherapy"
+        "title": "Baltic Association for Psychotherapy",
+        "sub-title": ""
     },
     "Navbar": {
         "1": "Home",
@@ -8,7 +9,7 @@
         "3": "Membership",
         "4": "Ethics",
         "5": "Divisions",
-        "6": "News & Events",
+        "6": "Events",
         "7": "Documents",
         "8": "Contact",
         "sub-5": {
@@ -24,5 +25,12 @@
             "2": "Regulation of certification",
             "3": "Regulation of licensing"
         }
+    },
+    "Footer": {
+        "1": "Navigation",
+        "2": "Contact Us",
+        "send-btn": "Send",
+        "placeholder1": "Enter your email",
+        "placeholder2": "Enter your message"
     }
 }
