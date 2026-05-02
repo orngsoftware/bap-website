@@ -1,0 +1,16 @@
+.row {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    padding: 25px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.sub_text { 
+    max-width: 483px;
+    margin: 0;
+}

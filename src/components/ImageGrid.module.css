@@ -1,0 +1,36 @@
+.grid {
+  --grid-size: 400px;
+  --gap: 10px;
+  --cell: calc((var(--grid-size) - var(--gap) * 2) / 3);
+  --step: calc(var(--cell) + var(--gap));
+
+  display: grid;
+  grid-template-columns: repeat(3, var(--cell));
+  grid-template-rows: repeat(3, var(--cell));
+  gap: var(--gap);
+  width: var(--grid-size);
+  height: var(--grid-size);
+}
+
+/* ── Cell base ── */
+.cell {
+  /* Shift the background so each cell shows its correct slice */
+  background-size: var(--grid-size) var(--grid-size);
+  background-position:
+    calc(var(--col, 0) * var(--step) * -1)
+    calc(var(--row, 0) * var(--step) * -1);
+  background-repeat: no-repeat;
+}
+
+/* ── Shape variants ── */
+.roundedAll {
+  border-radius: 22px;
+}
+
+.halfRight {
+  border-radius: 0 999px 999px 0;
+}
+
+.halfLeft {
+  border-radius: 999px 0 0 999px;
+}

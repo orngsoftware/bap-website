@@ -3,8 +3,7 @@
   --blue-color: #2e4756;
   --dark-cyan-color: #39707f;
   --cyan-color: #3c7a89;
-  --yellow-color: #EFCB68;
-  --light-grey-color: #E5E4E2;
+  --light-grey-color: #ececec;
 }
 
 body {
@@ -13,12 +12,17 @@ body {
   height: 100vh;
   align-items: center;
   font-weight: 300;
-  background: linear-gradient(335deg, var(--yellow-color) 30%, rgba(252, 242, 215, 1) 60%, white 100%);
-  margin: 10px 64px 0px 64px;
+  background: white;
+  margin: 10px 64px 0px 64px; 
 }
 
 p {
   color: var(--blue-color);
+}
+
+h1 {
+  color: var(--blue-color);
+  max-width: 65%;
 }
 
 .bold {
@@ -50,9 +54,24 @@ button {
   padding: 10px;
   padding-left: 20px;
   padding-right: 20px;
+  background-color: var(--light-grey-color);
   font-family: var(--font-raleway);
   font-size: 1rem;
   cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #dbdad8;
+}
+
+.btn-blue {
+  background-color: var(--blue-color);
+  color: white;
+}
+
+.btn-blue:hover {
+  background-color: var(--dark-cyan-color);
 }
 
 .btn-white {
@@ -179,6 +198,12 @@ a:hover {
   color: var(--dark-cyan-color);
 }
 
+.sub-title {
+  margin: 0px;
+  text-align: center;
+  max-width: 65%;
+}
+
 .nav-bar-mobile {
   position: absolute;
   display: none;
@@ -194,7 +219,7 @@ a:hover {
   
 }
 
-.sub-nav-mobile {
+.nav-mobile {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -234,6 +259,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 #dropdown1:hover .sub-navbar.sub-nav-1 {

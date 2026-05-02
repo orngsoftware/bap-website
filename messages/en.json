@@ -1,7 +1,9 @@
 {
     "HomePage": {
         "title": "Baltic Association for Psychotherapy",
-        "sub-title": ""
+        "sub-text": "A professional community for helping professionals who use psychotherapeutic approaches and share common professional values.",
+        "btn-text-main": "Join Us",
+        "btn-text-secondary": "Learn More"
     },
     "Navbar": {
         "1": "Home",
@@ -32,5 +34,9 @@
         "send-btn": "Send",
         "placeholder1": "Enter your email",
         "placeholder2": "Enter your message"
+    },
+    "EventsPage": {
+        "title": "Events",
+        "sub-title": "We organise various events, like those below"
     }
 }
