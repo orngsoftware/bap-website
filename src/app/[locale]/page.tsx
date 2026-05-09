@@ -1,6 +1,7 @@
 import ImageGrid from "@/components/ImageGrid";
 import { useTranslations } from "next-intl";
 import styles from "./landing.module.css"
+import Link from "next/link";
 
 export default function Home() {
   const t = useTranslations('HomePage')
@@ -11,7 +12,7 @@ export default function Home() {
         <p className={styles.sub_text}>{t('sub-text')}</p>
         <div className="row" style={{gap: 10, marginTop: 50}}>
           <button className="btn-blue">{t('btn-text-main')}</button>
-          <button>{t('btn-text-secondary')}</button>
+          <Link href="/about"><button>{t('btn-text-secondary')}</button></Link>
         </div>
       </div>
       <ImageGrid />

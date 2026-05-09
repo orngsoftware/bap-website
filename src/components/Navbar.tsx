@@ -19,7 +19,7 @@ const Navbar = () => {
         {isOpen &&
         <div className="nav-bar-mobile">
             <Link href="/">{t('1')}</Link>
-            <Link href="/">{t('2')}</Link>
+            <Link href="/about">{t('2')}</Link>
             <Link href="/">{t('3')}</Link>
             <Link href="/">{t('4')}</Link>
             <div className="row clickable" onClick={() => setSubSectionOpen1(!subSectionOpen1)}>
@@ -38,10 +38,10 @@ const Navbar = () => {
                     <Link href="/">{sub5T('3')}</Link>
                     <Link href="/">{sub5T('4')}</Link>
                     <Link href="/">{sub5T('5')}</Link>
-                    <Link href="/events">{sub5T('6')}</Link>
+                    <Link href="/">{sub5T('6')}</Link>
                 </div>
             }
-            <Link href="/">{t('6')}</Link>
+            <Link href="/events">{t('6')}</Link>
             <div className="row clickable" onClick={() => setSubSectionOpen2(!subSectionOpen2)}>
                 <p className="bold" style={{margin: 0}}>{t('7')}</p>
                 <svg className="to-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#2e4756" viewBox="0 0 256 256">
@@ -70,7 +70,7 @@ const Navbar = () => {
             />
             <div className='nav-bar'>
                 <Link href="/">{t('1')}</Link>
-                <Link href="/">{t('2')}</Link>
+                <Link href="/about">{t('2')}</Link>
                 <div className="row dropdown" id="dropdown1" style={{gap: 5}}>
                     <p className="bold">{t('5')}</p>
                     <svg className="icon-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#2e4756" viewBox="0 0 256 256"><path d="M213.66,165.66a8,8,0,0,1-11.32,0L128,91.31,53.66,165.66a8,8,0,0,1-11.32-11.32l80-80a8,8,0,0,1,11.32,0l80,80A8,8,0,0,1,213.66,165.66Z"></path></svg>

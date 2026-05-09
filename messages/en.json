@@ -10,7 +10,7 @@
         "2": "BAP",
         "3": "Membership",
         "4": "Ethics",
-        "5": "Divisions",
+        "5": "BAP Structure",
         "6": "Events",
         "7": "Documents",
         "8": "Contact",
@@ -38,5 +38,10 @@
     "EventsPage": {
         "title": "Events",
         "sub-title": "We organise various events, like those below"
+    },
+    "AboutPage": {
+        "title": "About Us",
+        "text1": "The Baltic Association for Psychotherapy was founded in 2023 as a professional community for helping professionals who use psychotherapeutic approaches and share common professional values.",
+        "text2": "We view psychotherapy not only, and not primarily, as a distinct profession, but as a field of knowledge about human beings, human experience, and the processes that are integrated into various areas of helping others. Psychotherapeutic knowledge encompasses not only working methods but also a culture of attentive and responsible presence alongside another person. This knowledge can be present in various helping practices and therefore unites a wide range of professionals who work with people."
     }
 }
