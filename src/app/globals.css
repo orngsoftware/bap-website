@@ -21,9 +21,9 @@ p {
   margin: 0px;
 }
 
-h1 {
+h1, h2, h3 {
   color: var(--blue-color);
-  max-width: 65%;
+  margin: 5px;
 }
 
 .bold {
@@ -232,25 +232,12 @@ a:hover {
   padding-bottom: 10px;
 }
 
-.sub-navbar {
+.card.sub-navbar {
   position: absolute;
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  border: 2px solid var(--dark-cyan-color);
-  border-radius: 15px;
-  padding: 25px;
-  gap: 10px;
-  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+  text-align: left;
 }
 
-.sub-navbar.sub-nav-1 {
-  display: none;
-  top: 60px;
-  left: 20%;
-}
-
-.sub-navbar.sub-nav-2 {
+.card.sub-navbar.sub-nav-2 {
   display: none;
   top: 60px;
   left: 65%;
@@ -310,6 +297,19 @@ a:hover {
   margin-top: -18px;
   position: relative;
   z-index: 1;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  border: 2px solid var(--dark-cyan-color);
+  border-radius: 15px;
+  padding: 25px;
+  gap: 10px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
 }
 
 .icon-row {
@@ -373,6 +373,12 @@ a:hover {
 .hamburger-bar.middle.open { opacity: 0; transform: scaleX(0);        }
 .hamburger-bar.bottom.open { transform: translateY(0) rotate(-45deg); }
 
+@media screen and (max-width: 750px) {
+  .row.cards-row {
+    flex-direction: column;
+  }
+}
+
 @media screen and (max-width: 1100px) {
   .nav-bar {
     display: none;
@@ -385,7 +391,7 @@ a:hover {
   }
 
   body {
-    margin: 10px 10px 0px 10px;
+    margin: 10px 20px 0px 20px;
   }
 
   .footer-wrapper {

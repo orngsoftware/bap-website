@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className={styles.row}>
       <div className={styles.col}>
-        <h1>{t('title')}</h1>
+        <h1 style={{maxWidth: "65%"}}>{t('title')}</h1>
         <p className={styles.sub_text}>{t('sub-text')}</p>
         <div className="row" style={{gap: 10, marginTop: 50}}>
           <button className="btn-blue">{t('btn-text-main')}</button>

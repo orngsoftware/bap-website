@@ -42,6 +42,33 @@
     "AboutPage": {
         "title": "About Us",
         "text1": "The Baltic Association for Psychotherapy was founded in 2023 as a professional community for helping professionals who use psychotherapeutic approaches and share common professional values.",
-        "text2": "We view psychotherapy not only, and not primarily, as a distinct profession, but as a field of knowledge about human beings, human experience, and the processes that are integrated into various areas of helping others. Psychotherapeutic knowledge encompasses not only working methods but also a culture of attentive and responsible presence alongside another person. This knowledge can be present in various helping practices and therefore unites a wide range of professionals who work with people."
+        "text2": "We view psychotherapy not only, and not primarily, as a distinct profession, but as a field of knowledge about human beings, human experience, and the processes that are integrated into various areas of helping others. Psychotherapeutic knowledge encompasses not only working methods but also a culture of attentive and responsible presence alongside another person. This knowledge can be present in various helping practices and therefore unites a wide range of professionals who work with people.",
+        "text3": "We strive to maintain an environment where professionalism is combined with human sensitivity and respect for individual dignity. In such an environment, it is not only the skills and technologies of help that are important, but also the professional’s personal attitude toward their work and toward people.",
+        "text4": "We believe that a culture of professional dignity is the foundation for the sustainable and ethical development of helping professions. The association exists to support this culture, foster professional dialogue, and strengthen the space of responsible care for people.",
+        "text5": "The goal of the association is to create a space for professional dialogue, exchange of experience, and the development of a culture of responsible work with people.",
+        "text6": "The Baltic Association of Psychotherapy is an open organization: we seek opportunities, not barriers, for joining our community. We do not fight for the “correctness” of a single helping method or the purity of one psychotherapeutic approach. Instead, we rely on decades of research demonstrating the effectiveness of all forms of psychotherapy, the value of their integration, and the importance of common factors that initiate and sustain the process of change, regardless of the psychotherapeutic orientation you choose.",
+        "text7": "We place special importance on dialogue at many levels: both within the therapeutic process itself and on the social level — in the interaction between local and international schools and professional organizations.",
+        "text8": "We view psychotherapy as a multilingual space. This refers not only to the diversity of ethnic languages in which therapy is conducted, but also to the “languages” of psychotherapy itself — the diversity of its methods, approaches, and theoretical foundations.",
+        "text9": "The foundation for uniting psychotherapists and practicing psychologists of different orientations within the Baltic Association of Psychotherapy is the Generic Model of Psychotherapy (Orlinsky, Howard, 1984; Orlinsky, 2009), which makes it possible to view psychotherapy as a unified field brought together rather than divided by different approaches.",
+        "card1": {
+            "title": "Professionalism",
+            "sub-title": "Quality work and sustainable development of helping practices"
+        },
+        "card2": {
+            "title": "Ethics",
+            "sub-title": "Responsible and respectful work with people" 
+        },
+        "card3": {
+            "title": "Dialogue",
+            "sub-title": "Continuous exchange of experience between specialists and schools"
+        },
+        "card4": {
+            "title": "Openness",
+            "sub-title": "Seeking opportunities for participation and collaboration"
+        },
+        "section1": "Our Values",
+        "section2": "Psychotherapy as a Field of Human Understanding",
+        "section3": "Openness, Dialogue, and Integration",
+        "section4": "Diversity of Approaches"
     }
 }
