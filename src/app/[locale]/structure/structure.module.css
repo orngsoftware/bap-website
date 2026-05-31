@@ -1,0 +1,103 @@
+.diagram-wrap { width: 100%; max-width: 600px; margin: 0 auto; }
+
+.circles-wrap { position: relative; width: 100%; aspect-ratio: 1; }
+
+.circ { 
+    position: absolute; 
+    border-radius: 50%; 
+    transform: translate(-50%, -50%); 
+    left: 50%; 
+    top: 50%; 
+}
+
+.circ-gray  { 
+    width: 88%;
+    height: 88%;
+    background: var(--light-grey-color); 
+}
+
+.circ-navy  { 
+    width: 72%;
+    height: 72%;
+    background: var(--blue-color); 
+}
+.circ-teal  { 
+    width: 58%; 
+    height: 58%;
+    background: var(--dark-cyan-color); 
+}
+.circ-inner { 
+    width: 44%; 
+    height: 44%; 
+    background: #498e9f;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+.circ-inner p { 
+    color: white; 
+    font-weight: 500; 
+    text-align: center; 
+    padding: 0 20%; 
+    margin: 0; 
+    line-height: 1.5; 
+}
+
+.pill-on-circle {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 58%;
+  z-index: 10;
+  border-radius: 15px;
+  padding: 9px 16px;
+  cursor: pointer;
+  text-align: center;
+  transition: opacity 0.15s;
+}
+
+.pill-on-circle p { 
+    margin: 0; 
+    line-height: 1.5; 
+    font-weight: 500; 
+}
+
+.pill-grey { 
+    background: var(--light-grey-color);
+    top: 5%;
+}
+.pill-grey p { 
+    color: var(--almost-black-color); 
+}
+.pill-navy { 
+    background: var(--blue-color); 
+    top: 16%; 
+}
+.pill-navy p { 
+    color: white; 
+}
+.pill-teal { 
+    background: var(--dark-cyan-color); bottom: 20%; 
+}
+.pill-teal p { 
+    color: white; 
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(3px);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background: var(--light-grey-color);
+  border-radius: 15px;
+  padding: 32px;
+  max-width: 500px;
+  width: 80%;
+}
