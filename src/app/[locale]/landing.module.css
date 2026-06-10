@@ -14,3 +14,9 @@
     max-width: 483px;
     margin: 0;
 }
+
+@media screen and (max-width: 1100px) {
+    .row {
+        flex-direction: column;
+    }
+}

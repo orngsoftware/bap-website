@@ -222,14 +222,14 @@ a:hover {
   width: 80%;
   top: 85px;
   gap: 10px;
-  
+  z-index: 999;
 }
 
-.nav-mobile {
+.sub-nav-mobile {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin: 10px 0px 15px 15px;
+  margin-left: 10px;
 }
 
 .sub-nav-mobile a {
@@ -253,6 +253,8 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 #dropdown1:hover .sub-navbar.sub-nav-1 {
@@ -310,7 +312,6 @@ a:hover {
   justify-content: center;
   text-align: center;
   background-color: white;
-  border: 2px solid var(--dark-cyan-color);
   border-radius: 15px;
   padding: 25px;
   gap: 10px;
@@ -339,6 +340,19 @@ a:hover {
 }
 .dropdown:hover .icon-down {
   display: none;
+}
+
+.blue-pill {
+  border-radius: 25px;
+  width: fit-content;
+  height: fit-content;
+  padding: 15px;
+  background-color: var(--blue-color);
+}
+
+.blue-pill p {
+    color: white;
+    text-align: center;
 }
 
 /* Hamburger icon animation */
@@ -378,12 +392,6 @@ a:hover {
 .hamburger-bar.middle.open { opacity: 0; transform: scaleX(0);        }
 .hamburger-bar.bottom.open { transform: translateY(0) rotate(-45deg); }
 
-@media screen and (max-width: 750px) {
-  .row.cards-row {
-    flex-direction: column;
-  }
-}
-
 @media screen and (max-width: 1100px) {
   .nav-bar {
     display: none;
@@ -395,14 +403,16 @@ a:hover {
     display: flex;
   }
 
-  body {
-    margin: 10px 20px 0px 20px;
+  .footer-wrapper {
+    width: 100%;
   }
 
-  .footer-wrapper {
-    width: calc(100% + 20px);
-    margin-left: -10px;
-    margin-right: -10px;
+  .row.cards-row {
+    flex-direction: column;
+  }
+
+  body {
+    margin: 0px;
   }
   
   .footer {

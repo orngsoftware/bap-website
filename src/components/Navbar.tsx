@@ -16,12 +16,12 @@ const Navbar = () => {
         <>
         {isOpen &&
         <div className="nav-bar-mobile">
-            <Link href="/">{t('1')}</Link>
-            <Link href="/about">{t('2')}</Link>
-            <Link href="/">{t('3')}</Link>
-            <Link href="/">{t('4')}</Link>
-            <Link href="/structure">{t('5')}</Link>
-            <Link href="/events">{t('6')}</Link>
+            <Link href="/" onClick={() => setIsOpen(false)}>{t('1')}</Link>
+            <Link href="/about" onClick={() => setIsOpen(false)}>{t('2')}</Link>
+            <Link href="/" onClick={() => setIsOpen(false)}>{t('3')}</Link>
+            <Link href="/ethics" onClick={() => setIsOpen(false)}>{t('4')}</Link>
+            <Link href="/structure" onClick={() => setIsOpen(false)}>{t('5')}</Link>
+            <Link href="/events" onClick={() => setIsOpen(false)}>{t('6')}</Link>
             <div className="row clickable" onClick={() => setSubSectionOpen2(!subSectionOpen2)}>
                 <p className="bold" style={{margin: 0}}>{t('7')}</p>
                 <svg className="to-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#2e4756" viewBox="0 0 256 256">
@@ -33,12 +33,12 @@ const Navbar = () => {
             </div>
             {subSectionOpen2 &&
                 <div className="sub-nav-mobile">
-                    <Link href="/">{sub7T('1')}</Link>
-                    <Link href="/">{sub7T('2')}</Link>
-                    <Link href="/">{sub7T('3')}</Link>
+                    <Link href="/" onClick={() => setIsOpen(false)}>{sub7T('1')}</Link>
+                    <Link href="/" onClick={() => setIsOpen(false)}>{sub7T('2')}</Link>
+                    <Link href="/" onClick={() => setIsOpen(false)}>{sub7T('3')}</Link>
                 </div>
             }
-            <Link href="/">{t('8')}</Link> 
+            <Link href="/" onClick={() => setIsOpen(false)}>{t('8')}</Link> 
         </div>
         }
         <div className='nav-wrapper'>
@@ -52,7 +52,7 @@ const Navbar = () => {
                 <Link href="/">{t('1')}</Link>
                 <Link href="/about">{t('2')}</Link>
                 <Link href="/structure">{t('5')}</Link>
-                <Link href="/">{t('4')}</Link>
+                <Link href="/ethics">{t('4')}</Link>
                 <Link href="/">{t('3')}</Link>
                 <Link href="/events">{t('6')}</Link>
                     <div className="row dropdown" id="dropdown2" style={{gap: 5}}>
