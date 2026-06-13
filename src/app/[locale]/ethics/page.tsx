@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 export default function Ethics() {
     const t = useTranslations('EthicsPage')
@@ -6,26 +7,63 @@ export default function Ethics() {
     return (
         <div className="col-center">
             <h1>{t('title')}</h1>
-            <div className="row" style={{marginTop: 10, gap: 45}}>
-                <div className="col" style={{gap: 10, maxWidth: 350}}>
-                    <h3 style={{margin: 0}}>{t('card1.title')}</h3>
-                    <p>{t('card1.sub-title')}</p>
+            <p style={{textAlign: "center", maxWidth: 600, marginTop: 15}}>{t('text1')}</p>
+            <div className="row" style={{gap: 45, marginBottom: 45, marginTop: 25}}>
+                <div className="col">
+                    <div className="row" style={{gap: 45}}>
+                        <div className="col" style={{gap: 35}}>
+                            <div className="col" style={{gap: 10, maxWidth: 350}}>
+                                <h3 style={{margin: 0}}>{t('card1.title')}</h3>
+                                <p>{t('card1.sub-title')}</p>
+                            </div>
+                            <div className="col" style={{gap: 10, maxWidth: 350}}>
+                                <h3 style={{margin: 0}}>{t('card2.title')}</h3>
+                                <p>{t('card2.sub-title')}</p>
+                            </div>
+                        </div>
+                        <div className="col" style={{gap: 35}}>
+                            <div className="col" style={{gap: 10, maxWidth: 350}}>
+                                <h3 style={{margin: 0}}>{t('card3.title')}</h3>
+                                <p>{t('card3.sub-title')}</p>
+                            </div>
+                            <div className="col" style={{gap: 10, maxWidth: 350}}>
+                                <h3 style={{margin: 0}}>{t('card4.title')}</h3>
+                                <p>{t('card4.sub-title')}</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div className="col" style={{gap: 10, maxWidth: 350}}>
-                    <h3 style={{margin: 0}}>{t('card2.title')}</h3>
-                    <p>{t('card2.sub-title')}</p>
-                </div>
+                <Image alt="Lecture Image" src="/lecture.png" width={400} height={400} />
             </div>
-            <div className="row" style={{marginTop: 35, gap: 45}}>
-                <div className="col" style={{gap: 10, maxWidth: 350}}>
-                    <h3 style={{margin: 0}}>{t('card3.title')}</h3>
-                    <p>{t('card3.sub-title')}</p>
+            <div className="diff-color-bg">
+                <h2 style={{alignSelf: "flex-start"}}>Наши ценности</h2>
+                <p style={{alignSelf: "flex-start", marginLeft: 5}}>{t('text2')}</p>
+                <div className="row wrap-row" style={{gap: 10, marginTop: 15}}>
+                    <div className="pill">
+                        <p>{t('value1')}</p>
+                    </div>
+                    <div className="pill">
+                        <p>{t('value2')}</p>
+                    </div>
+                    <div className="pill">
+                        <p>{t('value3')}</p>
+                    </div>
+                    <div className="pill">
+                        <p>{t('value4')}</p>
+                    </div>
                 </div>
-                <div className="col" style={{gap: 10, maxWidth: 350}}>
-                    <h3 style={{margin: 0}}>{t('card4.title')}</h3>
-                    <p>{t('card4.sub-title')}</p>
+                <div className="row wrap-row" style={{gap: 10}}>
+                    <div className="pill">
+                        <p>{t('value5')}</p>
+                    </div>
+                    <div className="pill">
+                        <p>{t('value6')}</p>
+                    </div>
+                    <div className="pill">
+                        <p>{t('value7')}</p>
+                    </div>
                 </div>
-            </div>
+            </div>     
         </div>
     )
 }

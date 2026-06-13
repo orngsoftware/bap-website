@@ -42,12 +42,14 @@ const Navbar = () => {
         </div>
         }
         <div className='nav-wrapper'>
-            <Image 
-            src='/logo.png' 
-            alt="BAP Logo"
-            width={72}
-            height={72}
-            />
+            <Link href="/">
+                <Image 
+                src='/logo.png' 
+                alt="BAP Logo"
+                width={72}
+                height={72}
+                />
+            </Link>
             <div className='nav-bar'>
                 <Link href="/">{t('1')}</Link>
                 <Link href="/about">{t('2')}</Link>
