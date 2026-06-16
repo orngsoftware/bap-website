@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 export default function About() {
     const t = useTranslations('AboutPage')
@@ -38,15 +39,20 @@ export default function About() {
                 <div className="icon-row" style={{alignItems: "flex-start", gap: 15}}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#39707f" viewBox="0 0 256 256"><path d="M224,48H32a8,8,0,0,0-8,8V200a8,8,0,0,0,8,8H224a8,8,0,0,0,8-8V56A8,8,0,0,0,224,48ZM88,144V112h80v32Zm-48,0V112H72v32Zm144-32h32v32H184Zm32-16H136V64h80ZM120,64V96H40V64ZM40,160h80v32H40Zm96,32V160h80v32Z"></path></svg>                    <p>{t('text4')}</p>
                 </div>
-                <div className="card" style={{textAlign: "left", border: "none"}}>
+                <div className="card" style={{textAlign: "left", flexBasis: "100%"}}>
                     <div className="icon-row" style={{gap: 15}}>
                         <svg style={{flex: "none"}} xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="#39707f" viewBox="0 0 256 256"><path d="M232,120h-8.34A96.14,96.14,0,0,0,136,32.34V24a8,8,0,0,0-16,0v8.34A96.14,96.14,0,0,0,32.34,120H24a8,8,0,0,0,0,16h8.34A96.14,96.14,0,0,0,120,223.66V232a8,8,0,0,0,16,0v-8.34A96.14,96.14,0,0,0,223.66,136H232a8,8,0,0,0,0-16Zm-96,87.6V200a8,8,0,0,0-16,0v7.6A80.15,80.15,0,0,1,48.4,136H56a8,8,0,0,0,0-16H48.4A80.15,80.15,0,0,1,120,48.4V56a8,8,0,0,0,16,0V48.4A80.15,80.15,0,0,1,207.6,120H200a8,8,0,0,0,0,16h7.6A80.15,80.15,0,0,1,136,207.6ZM128,88a40,40,0,1,0,40,40A40,40,0,0,0,128,88Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,152Z"></path></svg>
                         <p>{t('text5')}</p>
                     </div>
                 </div>
                 <h2 style={{alignSelf: "flex-start", margin: 0}}>{t('section3')}</h2>
-                <p>{t('text6')}</p>
-                <p>{t('text7')}</p>
+                <div className="row" style={{gap: 25}}>
+                    <div className="col" style={{gap: 15}}>
+                        <p>{t('text6')}</p>
+                        <p>{t('text7')}</p>                    
+                    </div>
+                    <Image alt="Group Therapy" src="/group_therapy.png" width={350} height={350} />
+                </div>
                 <p>{t('text8')}</p>
                 <h2 style={{alignSelf: "flex-start", margin: 0}}>{t('section4')}</h2>
                 <p>{t('text9')}</p>

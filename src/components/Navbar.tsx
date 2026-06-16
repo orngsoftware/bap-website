@@ -55,7 +55,7 @@ const Navbar = () => {
                 <Link href="/about">{t('2')}</Link>
                 <Link href="/structure">{t('5')}</Link>
                 <Link href="/ethics">{t('4')}</Link>
-                <Link href="/">{t('3')}</Link>
+                <Link href="/membership">{t('3')}</Link>
                 <Link href="/events">{t('6')}</Link>
                     <div className="row dropdown" id="dropdown2" style={{gap: 5}}>
                         <p className="bold">{t('7')}</p>

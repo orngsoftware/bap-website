@@ -86,9 +86,52 @@
     },
     "EthicsPage": {
         "title": "Ethics",
+        "text1": "We respect the fact that psychotherapy, in its many forms, is practiced by a wide range of people, and that the quality of psychotherapy is often determined not by a specialist’s status, but by their ethics, values, and certain personal qualities.",
+        "text2": "The BAP brings together specialists from different fields and levels of training who share common values:",
         "card1": {
-            "title": "Professionalism",
-            "sub-title": "Quality work and sustainable development of helping practices"
-        }
+            "title": "Professional Ethics",
+            "sub-title": "The responsible use of knowledge and methods in working with people, adherence to ethical principles, and respect for professional boundaries."
+        },
+        "card2": {
+            "title": "Social Responsibility",
+            "sub-title": "An awareness of the social role of the helping professions and a commitment to developing accessible, safe, and high-quality support for people."
+        },
+        "card3": {
+            "title": "Sustainable Development",
+            "sub-title": "Supporting the long-term development of the professional community, maintaining the quality of practice, and promoting the professional well-being of specialists."
+        },
+        "card4": {
+            "title": "Professional Dignity",
+            "sub-title": "An awareness of the depth of responsibility involved in working with people. This implies respect for human experience and the ability to be genuinely present with another person."
+        },
+        "value1": "Openness to Dialogue",
+        "value2": "The Value of Human Relationships",
+        "value3": "Sustainability",
+        "value4": "A Commitment to Personal and Professional Growth",
+        "value5": "The Value of Systemic Knowledge and Professional Development",
+        "value6": "The Importance of Education and Public Awareness",
+        "value7": "Meaningfulness, Self-Understanding, and Psychological Well-Being",
+        "sub-title": "Our values"
+    },
+    "MembershipPage": {
+        "title": "Membership",
+        "text1": "Membership in the BAP provides an opportunity to be part of a professional community of like-minded people who share similar values, receive support, grow professionally, and develop joint projects. It also creates a pathway toward specialist certification and the accreditation of educational and therapeutic programs.",
+        "text2": "Anyone working in the field of psychotherapy and sharing the ethics and values of our association can join the BAP.",
+        "btn-text1": "Learn more about our ethics and values",
+        "text3": "The fact that professional status is not the basis for joining the BAP is explained not only by our values but also by common sense. The absence of a unified psychotherapy law, along with significantly different standards not only between countries but also among psychotherapeutic associations within the same country, often creates confusion about who may call themselves a psychotherapist, who may practice a particular method, who may provide supervision, and so on. Even greater challenges in regulating professional practice can be seen in the online space, while psychotherapy and counseling services delivered online continue to grow rapidly. For this reason, when considering membership applications, we place less emphasis on the specific training background of professionals practicing psychotherapy and greater emphasis on their values and their attitude toward the profession.",
+        "text4": "Anyone with professional training in psychology or psychotherapy of any modality, who practices psychotherapeutic methods, values the profession, seeks continued professional development, and adheres to professional ethics, can become a member of the BAP.",
+        "benefit1": "Develop joint projects, including educational, training, research, and creative initiatives.",
+        "benefit2": "Participate in BAP-organized events with a 20% discount, including:",
+        "benefit2-details": {
+            "1": "seminars",
+            "2": "continuing professional development programs",
+            "3": "group supervision sessions",
+            "4": "support groups",
+            "5": "forums and conferences"
+        },
+        "benefit3": "Purchase BAP publications and products at a discounted price.",
+        "btn-text2": "Become a Member",
+        "card-sub-title": "BAP Membership provides opportunities to:",
+        "year": "year"
     }
 }

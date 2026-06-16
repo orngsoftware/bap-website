@@ -36,7 +36,7 @@ export default function Ethics() {
                 <Image alt="Lecture Image" src="/lecture.png" width={400} height={400} />
             </div>
             <div className="diff-color-bg">
-                <h2 style={{alignSelf: "flex-start"}}>Наши ценности</h2>
+                <h2 style={{alignSelf: "flex-start"}}>{t('sub-title')}</h2>
                 <p style={{alignSelf: "flex-start", marginLeft: 5}}>{t('text2')}</p>
                 <div className="row wrap-row" style={{gap: 10, marginTop: 15}}>
                     <div className="pill">
