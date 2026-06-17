@@ -289,6 +289,11 @@ a:hover {
   align-items: center;
 }
 
+.row.wrap-row {
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
 .col {
   display: flex;
   flex-direction: column;
@@ -328,8 +333,8 @@ a:hover {
   border-radius: 10px;
   padding: 15px;
   gap: 10px;
-  flex-basis: 175px;
-  border: 1.5px solid var(--light-grey-color)
+  flex: 1;
+  border: 1.5px solid var(--light-grey-color);
 }
 
 .icon-row {
@@ -361,13 +366,31 @@ a:hover {
   align-items: center;
   justify-content: center;
   border-radius: 15px;
-  min-width: 140px;
-  flex: 1 1 140px;       
-  height: auto;
-  min-height: 35px;
+  flex: 1 1 180px;
   text-align: center;
+  max-width: 500px;
+  max-height: 75px;
   padding: 15px;
   background-color: white;
+}
+
+.row.cards-row {
+  align-items: stretch;
+}
+
+.image-content-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 45px;
+  margin-bottom: 45px;
+  margin-top: 45px;
+}
+
+.two-col-grid {
+  display: flex;
+  flex-direction: row;
+  gap: 45px;
 }
 
 /* Hamburger icon animation */
@@ -418,8 +441,10 @@ a:hover {
     display: flex;
   }
 
-  .row.wrap-row {
-    flex-direction: column;
+  .row.cards-row .card {
+    width: 95%;
+    max-width: 500px;
+    flex: none; 
   }
 
   .col-center {
@@ -433,6 +458,16 @@ a:hover {
 
   .row.cards-row {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .image-content-row {
+    flex-direction: column;  /* 2x2 grid goes above image */
+  }
+
+  .image-content-row img {
+    width: 95%;
+    height: auto;
   }
 
   .col-center .col {
@@ -471,5 +506,12 @@ a:hover {
   .contact-form-footer {
       width: 80%;
       max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .two-col-grid {
+    flex-direction: column;
+    gap: 35px;
   }
 }

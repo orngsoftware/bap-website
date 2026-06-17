@@ -69,7 +69,7 @@ export default function Structure() {
     const t = useTranslations('BAP Structure')
 
     return (
-    <div className="col-center" style={{width: "100%"}}>
+    <div className="col-center">
         <h1>{t("title")}</h1>
         <p style={{textAlign: "center", maxWidth: 600, marginTop: 20}}>{t('sub-text')}</p>
         <CommunitiesCircle />

@@ -101,3 +101,10 @@
   max-width: 500px;
   width: 80%;
 }
+
+@media screen and (max-width: 600px) {
+  .pill-on-circle {
+    width: 90%;
+    max-width: 400px;
+  }
+}

@@ -9,23 +9,23 @@ export default function About() {
             <div className="col-center" style={{maxWidth: 800, gap: 20, marginTop: 10}}>
                 <p style={{textAlign: "center"}}>{t('text1')}</p>
                 <h2 style={{alignSelf: "flex-start", margin: 0}}>{t('section1')}</h2>
-                <div className="row cards-row" style={{gap: 10}}>
-                    <div className="card" style={{height: 125, maxWidth: 300}}>
-                        <p className="bold">{t('card1.title')}</p>
-                        <p>{t('card1.sub-title')}</p>
-                    </div>
-                    <div className="card" style={{height: 125, maxWidth: 300}}>
-                        <p className="bold">{t('card2.title')}</p>
-                        <p>{t('card2.sub-title')}</p>
-                    </div>
-                    <div className="card" style={{height: 125, maxWidth: 300}}>
-                        <p className="bold">{t('card3.title')}</p>
-                        <p>{t('card3.sub-title')}</p>
-                    </div>
-                    <div className="card" style={{height: 125, maxWidth: 300}}>
-                        <p className="bold">{t('card4.title')}</p>
-                        <p>{t('card4.sub-title')}</p>
-                    </div>
+                <div className="row cards-row" style={{ gap: 10 }}>
+                <div className="card">
+                    <p className="bold">{t('card1.title')}</p>
+                    <p>{t('card1.sub-title')}</p>
+                </div>
+                <div className="card">
+                    <p className="bold">{t('card2.title')}</p>
+                    <p>{t('card2.sub-title')}</p>
+                </div>
+                <div className="card">
+                    <p className="bold">{t('card3.title')}</p>
+                    <p>{t('card3.sub-title')}</p>
+                </div>
+                <div className="card">
+                    <p className="bold">{t('card4.title')}</p>
+                    <p>{t('card4.sub-title')}</p>
+                </div>
                 </div>
                 <h2 style={{alignSelf: "flex-start", margin: 0}}>{t('section2')}</h2>
                 <div className="icon-row" style={{alignItems: "flex-start", gap: 15}}>
