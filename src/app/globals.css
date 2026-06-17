@@ -104,6 +104,7 @@ button:hover {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  justify-content: center;
   margin-top: 50px;
   gap: 60px;
   padding: 50px 50px;
@@ -221,8 +222,7 @@ a:hover {
   background-color: white;
   border-radius: 15px;
   padding: 25px;
-  border: 2px solid var(--dark-cyan-color);
-  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+  border: 1.5px solid var(--light-grey-color);
   width: 80%;
   top: 85px;
   gap: 10px;
@@ -278,7 +278,6 @@ a:hover {
   flex-direction: column;
   background-color: var(--light-grey-color);
   border-radius: 10px;
-  width: 100%;
   gap: 10;
   height: fit-content;
   padding: 20px;
@@ -288,11 +287,6 @@ a:hover {
 .row {
   display: flex;
   align-items: center;
-}
-
-.row.wrap-row {
-  flex-wrap: wrap;
-  width: 100%;
 }
 
 .col {
@@ -424,12 +418,25 @@ a:hover {
     display: flex;
   }
 
+  .row.wrap-row {
+    flex-direction: column;
+  }
+
+  .col-center {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
   .footer-wrapper {
     width: 100%;
   }
 
   .row.cards-row {
     flex-direction: column;
+  }
+
+  .col-center .col {
+    margin: 10px;
   }
 
   body {

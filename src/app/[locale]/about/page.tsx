@@ -46,7 +46,7 @@ export default function About() {
                     </div>
                 </div>
                 <h2 style={{alignSelf: "flex-start", margin: 0}}>{t('section3')}</h2>
-                <div className="row" style={{gap: 25}}>
+                <div className="row wrap-row" style={{gap: 25}}>
                     <div className="col" style={{gap: 15}}>
                         <p>{t('text6')}</p>
                         <p>{t('text7')}</p>                    

@@ -20,6 +20,10 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} className={raleway.variable}>
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <title>{locale === "en" ? "BAP — Baltic Association for Psychotherapy" : "БАП — Балтийская Ассоциация Психотерапии"}</title>
+      </head>
     <body className={raleway.className}>
         <NextIntlClientProvider messages={messages}>
           <Navbar />

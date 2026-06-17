@@ -18,7 +18,7 @@ const Navbar = () => {
         <div className="nav-bar-mobile">
             <Link href="/" onClick={() => setIsOpen(false)}>{t('1')}</Link>
             <Link href="/about" onClick={() => setIsOpen(false)}>{t('2')}</Link>
-            <Link href="/" onClick={() => setIsOpen(false)}>{t('3')}</Link>
+            <Link href="/membership" onClick={() => setIsOpen(false)}>{t('3')}</Link>
             <Link href="/ethics" onClick={() => setIsOpen(false)}>{t('4')}</Link>
             <Link href="/structure" onClick={() => setIsOpen(false)}>{t('5')}</Link>
             <Link href="/events" onClick={() => setIsOpen(false)}>{t('6')}</Link>

@@ -8,7 +8,7 @@ export default function Ethics() {
         <div className="col-center">
             <h1>{t('title')}</h1>
             <p style={{textAlign: "center", maxWidth: 600, marginTop: 15}}>{t('text1')}</p>
-            <div className="row" style={{gap: 45, marginBottom: 45, marginTop: 25}}>
+            <div className="row wrap-row" style={{gap: 45, marginBottom: 45, marginTop: 25}}>
                 <div className="col">
                     <div className="row" style={{gap: 45}}>
                         <div className="col" style={{gap: 35}}>
