@@ -38,7 +38,7 @@ const Navbar = () => {
                     <Link href="/" onClick={() => setIsOpen(false)}>{sub7T('3')}</Link>
                 </div>
             }
-            <Link href="/" onClick={() => setIsOpen(false)}>{t('8')}</Link> 
+            <Link href="/contact" onClick={() => setIsOpen(false)}>{t('8')}</Link> 
         </div>
         }
         <div className='nav-wrapper'>
@@ -67,7 +67,7 @@ const Navbar = () => {
                             <Link href="/">{sub7T('3')}</Link>
                         </div>
                     </div>
-                <Link href="/">{t('8')}</Link>
+                <Link href="/contact">{t('8')}</Link>
             </div>
             <div className="row" style={{gap: 15}}>
                 <LingoSwitcher />

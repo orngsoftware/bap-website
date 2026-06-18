@@ -145,34 +145,14 @@ button:hover {
   color: var(--light-grey-color);
 }
 
-.footer-email-row {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-}
-
-.footer-email-row input {
-  border-radius: 15px;
-  border: 1px solid white;
-  color: white;
-  font-family: var(--font-raleway);
-  font-size: 1rem;
-  padding: 10px;
-  background: transparent;
-}
-
-.footer-email-row input::placeholder {
-  color: white;
-}
-
-.contact-form-footer .message-input {
+.contact-form .message-input {
     resize: vertical;
-    min-height: 110px;
+    min-height: 150px;
     padding: 10px;
     border-radius: 15px;
-    border: 1px solid white;
+    border: 1.5px solid var(--light-grey-color);
     margin-top: 10px;
-    color: white;
+    color: var(--almost-black-color);
     font-family: var(--font-raleway);
     font-size: 1rem;
     background: transparent;
@@ -180,8 +160,13 @@ button:hover {
     box-sizing: border-box;
 }
 
-.contact-form-footer .message-input::placeholder {
-    color: white;
+.contact-form .message-input::placeholder {
+    color: var(--almost-black-color);
+}
+
+.contact-form button {
+  width: 100%;
+  margin-top: 5px;
 }
 
 /* Copyright bar */
@@ -279,7 +264,6 @@ a:hover {
   background-color: var(--light-grey-color);
   border-radius: 10px;
   gap: 10;
-  height: fit-content;
   padding: 20px;
   align-items: center;
 }
@@ -292,6 +276,7 @@ a:hover {
 .row.wrap-row {
   flex-wrap: wrap;
   align-items: stretch;
+  justify-content: center;
 }
 
 .col {
