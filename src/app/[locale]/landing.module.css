@@ -18,6 +18,7 @@
 @media screen and (max-width: 1100px) {
     .row {
         flex-direction: column;
+        padding: 0px;
     }
     .col {
         margin-left: 10px;
