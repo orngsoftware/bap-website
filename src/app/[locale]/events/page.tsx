@@ -3,20 +3,30 @@ import { createClient } from "@supabase/supabase-js"
 import Image from "next/image"
 
 async function EventsData(n?: number) {
-  const supabase = createClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY!
-  );
-  let query = supabase.from("Events").select();
-  if (n !== undefined) {
-    query = query.limit(n);
-  }
-  const { data, error } = await query;
-  if (error) {
-    return null
-  }
+  try {
+    const supabase = createClient(
+      process.env.NEXT_PUBLIC_SUPABASE_URL!,
+      process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY!
+    );
 
-  return data;
+    let query = supabase.from("Events").select();
+
+    if (n !== undefined) {
+      query = query.limit(n);
+    }
+
+    const { data, error } = await query;
+
+    if (error) {
+      console.error(error);
+      return null;
+    }
+
+    return data;
+  } catch (err) {
+    console.error(err);
+    return null;
+  }
 }
 
 export async function EventCards({ data }: any) {
@@ -35,8 +45,8 @@ export async function EventCards({ data }: any) {
     return (
         <>
             {data.map((event: any) => (
-                <div className="row" style={{marginTop: 25, marginBottom: 50, flexWrap: "wrap"}}>
-                    <div key={`event-card-${event.id}`} className="col event-card">
+                <div key={`event-card-${event.id}`} className="row" style={{marginTop: 25, marginBottom: 50, flexWrap: "wrap"}}>
+                    <div className="col event-card">
                         <Image
                             alt="Event thumbnail"
                             width={300}
