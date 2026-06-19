@@ -51,16 +51,6 @@ const Footer = () => {
                         <Link href="/">{sub7T('3')}</Link>
                     </div>
                 </div>
-
-                <div className="footer-col">
-                    <p className="footer-heading">{t('5')}</p>
-                    <Link href="/">{sub5T('1')}</Link>
-                    <Link href="/">{sub5T('2')}</Link>
-                    <Link href="/">{sub5T('3')}</Link>
-                    <Link href="/">{sub5T('4')}</Link>
-                    <Link href="/">{sub5T('5')}</Link>
-                    <Link href="/">{sub5T('6')}</Link>
-                </div>
             </footer>
 
             <div className="footer-copyright">
