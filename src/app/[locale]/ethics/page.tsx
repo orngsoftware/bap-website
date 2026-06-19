@@ -33,7 +33,7 @@ export default function Ethics() {
                         </div>
                     </div>
                 </div>
-                <Image alt="Lecture Image" src="/lecture.png" width={400} height={400} />
+                <Image alt="Lecture Image" preload={true} src="/lecture.png" width={400} height={400} />
             </div>
             <div className="diff-color-bg">
             <h2 style={{ alignSelf: "flex-start" }}>{t('sub-title')}</h2>

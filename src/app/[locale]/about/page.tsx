@@ -46,12 +46,12 @@ export default function About() {
                     </div>
                 </div>
                 <h2 style={{alignSelf: "flex-start", margin: 0}}>{t('section3')}</h2>
-                <div className="row wrap-row" style={{gap: 25}}>
+                <div className="row custom-wrap" style={{gap: 25}}>
                     <div className="col" style={{gap: 15}}>
                         <p>{t('text6')}</p>
                         <p>{t('text7')}</p>                    
                     </div>
-                    <Image alt="Group Therapy" src="/group_therapy.png" width={350} height={350} />
+                    <Image alt="Group Therapy" preload={true} src="/group_therapy.png" width={300} height={300} />
                 </div>
                 <p>{t('text8')}</p>
                 <h2 style={{alignSelf: "flex-start", margin: 0}}>{t('section4')}</h2>

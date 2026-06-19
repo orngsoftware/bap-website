@@ -19,8 +19,6 @@
     .row {
         flex-direction: column;
         padding: 0px;
-    }
-    .col {
         margin-left: 10px;
         margin-right: 10px;
     }

@@ -67,6 +67,7 @@ button {
   font-family: var(--font-raleway);
   font-size: 1rem;
   cursor: pointer;
+  color: var(--almost-black-color);
   transition: background-color 0.2s;
 }
 
@@ -424,6 +425,10 @@ a:hover {
   }
   .nav-bar-mobile {
     display: flex;
+  }
+
+  .row.custom-wrap {
+    flex-direction: column;
   }
 
   .row.cards-row .card {
