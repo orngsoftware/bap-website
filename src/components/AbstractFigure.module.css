@@ -1,0 +1,259 @@
+.canvas {
+  --cream: #ececec;
+  --teal-deep: #264a54;
+  --teal-mid: #3c7a89;
+  --coral: #ccc3b8;
+  --mustard: #856d4f;
+  --ink: #16262e;
+
+  position: relative;
+  width: 320px;
+  height: 320px;
+  border-radius: 28px;
+  background: var(--cream);
+  overflow: hidden;
+}
+
+.svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* ---------- face group: slow ambient float ---------- */
+
+.faceGroup {
+  animation: floatFace 6s ease-in-out infinite;
+}
+
+@keyframes floatFace {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* ---------- aura / soft glow behind the face ---------- */
+
+.aura {
+  fill: var(--teal-mid);
+  opacity: 0.12;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: auraPulse 8s ease-in-out infinite;
+}
+
+@keyframes auraPulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.18;
+  }
+}
+
+/* ---------- ground line ---------- */
+
+.scallop {
+  fill: none;
+  stroke: var(--teal-deep);
+  stroke-width: 2.5px;
+  stroke-linecap: round;
+  opacity: 0.5;
+}
+
+/* ---------- the face ---------- */
+
+.face {
+  fill: var(--teal-mid);
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: breatheFace 5s ease-in-out infinite;
+}
+
+@keyframes breatheFace {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.018);
+  }
+}
+
+/* shadow giving the face its turn / volume, asymmetric on purpose */
+.jawShadow {
+  fill: var(--teal-deep);
+  opacity: 0.2;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: shadowShift 9s ease-in-out infinite;
+}
+
+/* light catching the forehead */
+.foreheadHighlight {
+  fill: var(--cream);
+  opacity: 0.45;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: shadowShift 7s ease-in-out infinite reverse;
+}
+
+@keyframes shadowShift {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.68;
+  }
+}
+
+/* nose ridge: a sliver of shadow beside a sliver of light, both still */
+.noseShadow {
+  fill: var(--teal-deep);
+  opacity: 0.3;
+}
+
+.noseHighlight {
+  fill: var(--cream);
+  opacity: 0.4;
+}
+
+/* faint mouth crease, still */
+.mouthShadow {
+  fill: var(--teal-deep);
+  opacity: 0.42;
+}
+
+/* ---------- halo: small dots orbiting the face ---------- */
+
+.halo {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: haloSpin 24s linear infinite;
+}
+
+@keyframes haloSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.haloDot {
+  opacity: 0.9;
+}
+
+.haloCoral {
+  fill: var(--coral);
+}
+
+.haloMustard {
+  fill: var(--mustard);
+}
+
+.haloInk {
+  fill: var(--ink);
+}
+
+.haloTeal {
+  fill: var(--cream);
+}
+
+/* ---------- sparkles ---------- */
+
+.star {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.star1 {
+  fill: var(--ink);
+  animation: twinkle 3s ease-in-out infinite;
+}
+
+.star2 {
+  fill: var(--coral);
+  animation: twinkle 3.4s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+.star3 {
+  fill: var(--mustard);
+  animation: twinkle 2.7s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(0.85);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.08);
+  }
+}
+
+/* ---------- spiral accent ---------- */
+
+.spiral {
+  fill: none;
+  stroke: var(--mustard);
+  stroke-width: 1.6px;
+  stroke-linecap: round;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: spiralSpin 26s linear infinite;
+}
+
+@keyframes spiralSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ---------- pebbles ---------- */
+
+.pebble1 {
+  fill: var(--coral);
+  animation: bob 4s ease-in-out infinite;
+}
+
+.pebble2 {
+  fill: var(--ink);
+  opacity: 0.85;
+  animation: bob 4.6s ease-in-out infinite;
+  animation-delay: 0.6s;
+}
+
+@keyframes bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+/* ---------- accessibility ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .canvas * {
+    animation: none !important;
+  }
+}
