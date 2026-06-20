@@ -2,7 +2,6 @@ import { useTranslations } from "next-intl";
 import styles from "./landing.module.css"
 import Link from "next/link";
 import Image from "next/image";
-import AbstractFigure from "@/components/AbstractFigure";
 
 export default function Home() {
   const t = useTranslations('HomePage')
@@ -16,8 +15,7 @@ export default function Home() {
           <Link href="/about"><button>{t('btn-text-secondary')}</button></Link>
         </div>
       </div>
-      {/* <Image width={375} height={375} src="/home_image.png" alt="People are standing in the circle on beach" /> */}
-      <AbstractFigure />
+      <Image width={400} height={400} src="/home_image.webp" alt="People are standing in the circle on beach" />
     </div>
   )
 }
